@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+class Node {
+public:
+    int data;
+    Node *next;
+};
 class linkedlist{
 private:
     Node* head;
@@ -21,8 +25,23 @@ private:
             temp = temp->next;
         }
     }
+    void countelement(){
+        Node* temp = head;
+        int count = 0;
+        while(temp != NULL){
+            count++;
+            temp = temp->next;
+        }
+        cout << "number of elements is"<<count<<endl;
+    }
 };
-
-
-
-
+int main()
+{
+    linkedlist l;
+    l.insert(1);
+    l.insert(2);
+    l.insert(3);
+    l.countelement();
+    l.display();
+    return 0;
+}
