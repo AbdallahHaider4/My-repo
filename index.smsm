@@ -8,6 +8,12 @@ private:
     linkedlist(){
         head = NULL;
     }
+    void insert(int n){
+        Node* temp = new Node();
+        temp->data = n;
+        temp->next = head;
+        head = temp;
+    }
 };
 
 
