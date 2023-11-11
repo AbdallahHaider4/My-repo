@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class linkedlist{
+private:
+    Node* head;
+    public:
+    linkedlist(){
+        head = NULL;
+    }
+};
+
+
+
